@@ -1,10 +1,8 @@
-class P1:
+class Pessoa:
     def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
 
-    def Apresentar(self):
-        print(self.nome)
-        print(self.idade)
+P1 = Pessoa("Ana", "20")
 
-
+print(f"Nome {P1.nome}, Idade: {P1.idade}")

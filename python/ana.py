@@ -3,6 +3,6 @@ class Pessoa:
         self.nome = nome
         self.idade = idade
 
-P1 = Pessoa("Ana", "20")
+p1 = Pessoa("Ana", "20")
 
-print(f"Nome {P1.nome}, Idade: {P1.idade}")
+print(f"Nome: {p1.nome}; Idade: {p1.idade}")

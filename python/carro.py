@@ -7,6 +7,6 @@ class Carro:
     def exibir_dados(self):
         print(f"Marca {self.marca}, Modelo {self.modelo}, Ano {self.ano}")
 
-Mycar = Carro("Honda", "Civic", "2026")
-Mycar.exibir_dados()
+car = Carro("Honda", "Civic", "2026")
+car.exibir_dados()
 

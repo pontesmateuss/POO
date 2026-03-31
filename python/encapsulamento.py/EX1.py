@@ -1,14 +1,40 @@
+from dataclasses import dataclass
+
+@dataclass(frozen=True)
 class Estudante:
-    identificador = 1
-
     def __init__(self, id, nome, creditos):
-        self.id = id 
+        self._id = id 
         self.nome = nome
-        self.creditos = creditos
-        Estudante.identificador += 1
-
-    def id_estudante(self):
-        print(f"ID do {Estudante.nome}: {Estudante.id}")
-
+        self.__creditos = creditos
     
-    id_estudante()
+    def detalhar(self):
+        print(f"{self.id}, {self.nome}")
+
+    def get_creditos(self):
+        return self.__creditos
+    
+    def set_creditos(self, valor):
+        if valor <= 0:
+            self.__creditos = 1
+        else: 
+            self.__creditos = valor
+
+    def detalhar(self):
+        print(f"nome: {self.nome}")
+        print(f"id: {self._id}")
+        print(f"créditos: {self.__creditos}")
+
+#atributos
+estudante1 = Estudante(1, "Will")
+estudante2 = Estudante(2, "LeBron")
+#metodo
+estudante1.get_creditos(738)
+estudante2.get_creditos(100)
+
+estudante1.set_creditos(99)
+estudante2.set_creditos(89)
+#detalhamento
+estudante1.detalhar()
+estudante2.detalhar()
+
+

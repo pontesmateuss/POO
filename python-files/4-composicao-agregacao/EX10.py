@@ -1,12 +1,12 @@
 class Aluno:
-    def __init__(self,nome):
+    def __init__(self, nome):
         self.nome = nome
 
 class Turma:
-    def __init__(self,nome):
+    def __init__(self, nome):
         self.nome = nome
         self.alunos = []
-    def adicionar_aluno(self,aluno):
+    def adicionar_aluno(self, aluno):
         self.alunos.append(aluno)
     def exibir_alunos(self):
         print(f"Os alunos da turma {self.nome}:")
@@ -14,10 +14,10 @@ class Turma:
             print(aluno.nome)
 
 class Escola:
-    def __init__(self,nome):
+    def __init__(self, nome):
         self.nome = nome
         self.turmas = []
-    def adicionar_turma(self,nome):
+    def adicionar_turma(self, nome):
         turma = Turma(nome)
         self.turmas.append(turma)
     def exibir_turmas(self):

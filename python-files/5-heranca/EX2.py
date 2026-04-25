@@ -1,9 +1,11 @@
 class Animal:
-    def __init__(self,grupo):
-        self.grupo:str = grupo
-
-        
-class Cachorro(Animal):
     def __init__(self, grupo):
-        super().__init__(grupo)
-        self.grupo = "Mamífero"
+        self.grupo = grupo
+
+
+class Cachorro(Animal):
+    def __init__(self):
+        super().__init__("mamífero")
+
+dog = Cachorro()
+print(dog.grupo)

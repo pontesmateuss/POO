@@ -5,13 +5,15 @@ class Animal:
 
 class Cachorro(Animal):
     def emitir_som(self):
-        return "Auu AuuuuuU!"
+        return "Auuu Auuuuu!"
     
 
 class Gato(Animal):
     def emitir_som(self):
-        return "Miauw"
-    
+        som = super().emitir_som()
+        print(f"Som da superclasse: {som}")
+        return "Miado"
+
 
 animais =[Animal(), Cachorro(), Gato()]
 for animal in animais:

@@ -24,9 +24,9 @@ class Paciente:
     def idade(self, valor):
 
         # Verifica se a idade é negativa
-        if valor < 0:
+        if valor < 11:
 
-            print("Idade inválida!")
+            print("cpf inválida!")
 
         else:
 

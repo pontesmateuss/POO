@@ -1,0 +1,16 @@
+def divisao_segura(a, b):
+    try:
+        return a / b
+
+    except ZeroDivisionError:
+        print("Erro: divisão por zero.")
+        return None
+
+    except TypeError:
+        print("Erro: os valores devem ser números.")
+        return None
+
+
+print(divisao_segura(10, 2))
+print(divisao_segura(10, 0))
+print(divisao_segura(10, "2"))

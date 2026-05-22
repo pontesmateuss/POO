@@ -6,8 +6,6 @@ def verificar_nota(nota):
 
     print("Nota válida")
 
-
-# Testes
 try:
     verificar_nota(8)
     verificar_nota(15)

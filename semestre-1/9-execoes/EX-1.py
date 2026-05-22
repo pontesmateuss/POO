@@ -5,9 +5,7 @@ def adicionar_valor(inicial, adicional):
         raise ValueError(
             "Somente valores positivos devem ser adicionados ao valor inicial"
         )
-
     return inicial + adicional
-
 
 # Primeira execução (funciona)
 try:
@@ -18,7 +16,7 @@ except ValueError as erro:
     print("Erro:", erro)
 
 
-# Segunda execução (gera exceção)
+# Segunda execução (exceção)
 try:
     resultado = adicionar_valor(10, -3)
     print("Resultado:", resultado)

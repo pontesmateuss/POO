@@ -1,6 +1,7 @@
+
+
 class SenhaCurtaError(Exception):
     pass
-
 
 def cadastrar_senha(senha):
     if len(senha) < 8:
@@ -10,14 +11,12 @@ def cadastrar_senha(senha):
 
     print("Senha cadastrada com sucesso!")
 
-
 # Testes
 try:
     cadastrar_senha("123")
 
 except SenhaCurtaError as erro:
     print("Erro:", erro)
-
 
 try:
     cadastrar_senha("senha123")
